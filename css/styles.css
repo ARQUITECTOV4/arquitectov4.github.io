@@ -1,0 +1,262 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  background: #fff;
+  color: #000;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #000;
+  z-index: 1000;
+}
+
+.header-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  margin-left: 32px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* MAIN */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+/* HERO */
+.hero {
+  margin: 140px 0;
+}
+
+.hero h1 {
+  font-size: 72px;
+  line-height: 1.08;
+  font-weight: 400;
+}
+
+/* SECTIONS */
+.section {
+  margin: 120px 0;
+}
+
+.label {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.text {
+  font-size: 28px;
+  line-height: 1.55;
+  max-width: 900px;
+}
+
+/* LIST */
+.work-list {
+  list-style: none;
+  font-size: 26px;
+  line-height: 1.6;
+}
+
+.work-list li {
+  margin-bottom: 14px;
+}
+
+/* IMAGES */
+.image {
+  margin: 80px 0;
+}
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #000;
+}
+
+.footer-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 48px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  main {
+    padding: 0 24px;
+  }
+
+  .header-inner {
+    padding: 16px 24px;
+  }
+
+  .nav a {
+    margin-left: 16px;
+    font-size: 11px;
+  }
+
+  .hero {
+    margin: 70px 0;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  .section {
+    margin: 80px 0;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .work-list {
+    font-size: 20px;
+  }
+
+  .image {
+    margin: 40px 0;
+  }
+
+  .footer-inner {
+    padding: 12px 24px;
+    font-size: 11px;
+  }
+}
+/* =========================
+   LOGO – CONTROL MAESTRO
+   (PEGAR AL FINAL DEL CSS)
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  max-height: 32px;
+}
+
+.logo img {
+  height: 250px;        /* tamaño correcto institucional */
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 42px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.nav a {
+  position: relative;
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #111;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+.footer {
+  width: 100%;
+  padding: 16px 0;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.footer-row {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  white-space: nowrap;   /* 🔥 CLAVE GLOBAL */
+}
+
+.footer-copy {
+  color: #555;
+}
+
+.footer-social,
+.footer-legal {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-social a,
+.footer-legal a {
+  color: #555;
+  text-decoration: none;
+}
+
+.footer-social a:hover,
+.footer-legal a:hover {
+  text-decoration: underline;
+}
